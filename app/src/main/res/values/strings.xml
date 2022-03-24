@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EETK</string>
+    <string name="autorization_txt">Авторизация</string>
+    <string name="enter_btn">Войти</string>
+    <string name="login_hint"> логин</string>
+    <string name="password_hint"> пароль</string>
+</resources>
