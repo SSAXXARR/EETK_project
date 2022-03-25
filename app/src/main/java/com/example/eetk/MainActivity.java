@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         enter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Menu.class);
+                Intent intent = new Intent(MainActivity.this, Student_menu.class);
                 login = findViewById(R.id.editTextLogin);
                 password = findViewById(R.id.editTextPassword);
                 String loginMessage = login.getText().toString();
