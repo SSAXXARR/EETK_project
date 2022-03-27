@@ -15,8 +15,8 @@ public class Menu extends AppCompatActivity {
         setContentView(R.layout.menu);
 
         Bundle arguments = getIntent().getExtras();
-        String login = arguments.get(MainActivity.LOGIN_KEY).toString();
-        String password = arguments.get(MainActivity.PASSWORD_KEY).toString();
+        String login = arguments.get(Authorisation.LOGIN_KEY).toString();
+        String password = arguments.get(Authorisation.PASSWORD_KEY).toString();
 
         textLogin = findViewById(R.id.textLogin);
         textPassword = findViewById(R.id.textPassword);
