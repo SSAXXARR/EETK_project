@@ -3,9 +3,7 @@ package com.example.eetk;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -40,47 +38,61 @@ public class Authorisation extends AppCompatActivity implements View.OnClickList
     public void onClick(View view) {
         //если нажата кнопка войти
         if(view.getId() == R.id.enter){
-            singIn(login.getText().toString(), password.getText().toString());
+            //если одно из полей не заполнено
+            if(password.getText().toString().equals("") && login.getText().toString().equals("")) {
+                Toast.makeText(this, "одно из полей не заполнено", Toast.LENGTH_SHORT).show();
+            }else{
+                singIn(login.getText().toString(), password.getText().toString());
+            }
         }
         // если нажата кнопка зарегистрироваться
         else if(view.getId() == R.id.bntReg){
-            registration(login.getText().toString(), password.getText().toString());
+            //если одно из полей не заполнено
+            if(password.getText().toString().equals("") && login.getText().toString().equals("")) {
+                Toast.makeText(this, "одно из полей не заполнено", Toast.LENGTH_SHORT).show();
+            }else{
+                registration(login.getText().toString(), password.getText().toString());
+            }
         }
     }
 
     // метод авторизации
     public void singIn(String email, String password){
         //firebase объект, мы входим с исп почты и пароля
-        mAuth.signInWithEmailAndPassword(email, password)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        //если таск завершается успешно, то
-                        if(task.isSuccessful()){
-                            Toast.makeText(Authorisation.this, "Авторизация успешна", Toast.LENGTH_SHORT).show();
-                        } else{
-                            Toast.makeText(Authorisation.this, "Авторизация не удалась", Toast.LENGTH_SHORT).show();
-                        }
+            mAuth.signInWithEmailAndPassword(email, password)
+                    .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            //если таск завершается успешно, то
+                            if (task.isSuccessful()) {
+                                Toast.makeText(Authorisation.this, "Авторизация успешна", Toast.LENGTH_SHORT).show();
+                            } else {
+                                Toast.makeText(Authorisation.this, "Авторизация не удалась", Toast.LENGTH_SHORT).show();
+                            }
 
-                    }
-                });
+                        }
+                    });
+
     }
 
     //метод регистрации
     public void registration(String email, String password){
-        mAuth.createUserWithEmailAndPassword(email, password)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+        if(email == "" && password == "") {
+            mAuth.createUserWithEmailAndPassword(email, password)
+                    .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
 
-                    //если регистрация удалась
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                if(task.isSuccessful()){
-                    Toast.makeText(Authorisation.this, "Регистрация удалась!", Toast.LENGTH_SHORT).show();
-                }
-                else{
-                    Toast.makeText(Authorisation.this, "Не удалось зарегистрироваться", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
+                        //если регистрация удалась
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if (task.isSuccessful()) {
+                                Toast.makeText(Authorisation.this, "Регистрация удалась!", Toast.LENGTH_SHORT).show();
+                            } else {
+                                Toast.makeText(Authorisation.this, "Не удалось зарегистрироваться", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    });
+        }else{
+            Toast.makeText(this, "одно из полей не заполнено", Toast.LENGTH_SHORT).show();
+        }
     }
 }
