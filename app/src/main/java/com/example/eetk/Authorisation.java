@@ -3,6 +3,7 @@ package com.example.eetk;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -66,6 +67,9 @@ public class Authorisation extends AppCompatActivity implements View.OnClickList
                             //если таск завершается успешно, то
                             if (task.isSuccessful()) {
                                 Toast.makeText(Authorisation.this, "Авторизация успешна", Toast.LENGTH_SHORT).show();
+                                Intent i = new Intent(Authorisation.this, Admin_menu.class);
+                                startActivity(i);
+                                finish();
                             } else {
                                 Toast.makeText(Authorisation.this, "Авторизация не удалась", Toast.LENGTH_SHORT).show();
                             }
