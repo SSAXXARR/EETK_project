@@ -19,13 +19,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Admin_menu"
+            android:name=".Schedule"
             android:exported="false" />
         <activity
             android:name=".Student_menu"
             android:exported="false" />
         <activity
-            android:name=".Menu"
+            android:name=".Prepods"
             android:exported="false" />
         <activity
             android:name=".Authorisation"

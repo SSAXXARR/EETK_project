@@ -21,6 +21,13 @@
         <item>148-ИСП</item>
         <item>Я препод</item>
     </string-array>
+    <string-array name="prepods_names">
+        <item>Аминова А.С</item>
+        <item>Саитова А.А</item>
+        <item>Попкова К.А</item>
+        <item>Серкова Е.Г</item>
+        <item>Кореганова М.А</item>
+    </string-array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

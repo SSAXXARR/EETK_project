@@ -3,15 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragmentThursday">
+    tools:context=".Schedule">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ListView
+        android:id="@+id/listViewF1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="TAB-4"
         android:gravity="center"
         android:textColor="@color/black"
-        android:textSize="30dp" />
+        android:textSize="30dp"/>
 
 </FrameLayout>

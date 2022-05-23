@@ -67,7 +67,7 @@ public class Authorisation extends AppCompatActivity implements View.OnClickList
                             //если таск завершается успешно, то
                             if (task.isSuccessful()) {
                                 Toast.makeText(Authorisation.this, "Авторизация успешна", Toast.LENGTH_SHORT).show();
-                                Intent i = new Intent(Authorisation.this, Admin_menu.class);
+                                Intent i = new Intent(Authorisation.this, Prepods.class);
                                 startActivity(i);
                                 finish();
                             } else {
