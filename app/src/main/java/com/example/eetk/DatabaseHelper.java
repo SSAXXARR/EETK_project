@@ -13,19 +13,16 @@ import java.io.OutputStream;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
-    public static String DB_NAME = "rasp.sqlite";
+    public static String DB_NAME = "raspis.sqlite";
     private static final int SCHEMA = 1; // версия базы данных
-    static final String TABLE = "myrasp";
+    static final String TABLE = "myraspis";
     private static String DB_PATH;
 
     public static final String COLUMN_ID="id";
     public static final String COLUMN_ID_PREPOD = "id_prepod";
-    public static final String COLUMN_NAME_PREPOD = "prepod";
     public static final String COLUMN_DAY = "day";
-    public static final String COLUMN_GROUP_ID = "group_id";
     public static final String COLUMN_GROUP = "group";
-    public static final String COLUMN_KABINET = "kab";
-    public static final String COLUMN_POD_GROUP = "pod_group";
+    public static final String COLUMN_GROUP_ID = "group_id";
 
 
     public SQLiteDatabase database;
@@ -34,7 +31,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public DatabaseHelper(Context context) {
         super(context, DB_NAME, null, SCHEMA);
         this.myContext=context;
-        DB_PATH = "/data/data/myraspisanie/databases/";
+        DB_PATH = "/data/data/com.example.eetk/databases/";
 
     }
 

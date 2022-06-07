@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light">
         <activity
-            android:name=".SplashScreen"
+            android:name=".Prepods"
             android:label="ЕЕТК"
             android:exported="true" >
             <intent-filter>
@@ -25,7 +25,7 @@
             android:name=".Student_menu"
             android:exported="false" />
         <activity
-            android:name=".Prepods"
+            android:name=".SplashScreen"
             android:exported="false" />
         <activity
             android:name=".Authorisation"

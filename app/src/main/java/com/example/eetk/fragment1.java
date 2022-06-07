@@ -36,6 +36,8 @@ public class fragment1 extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+        Bundle bundle = getActivity().getIntent().getExtras();
+        prepodID = bundle.getString("classID");
         sqlHelper = new DatabaseHelper(getActivity());
         sqlHelper.create_db();
     }
@@ -44,12 +46,11 @@ public class fragment1 extends Fragment {
     public void onResume() {
         super.onResume();
         try {
+
             sqlHelper.open();
             userCursor = sqlHelper.database.rawQuery("select * from " + DatabaseHelper.TABLE + " where class="+prepodID+" and day=1", null);
             String[] headers = new String[]{DatabaseHelper.COLUMN_GROUP};
-            userAdapter = new SimpleCursorAdapter(getActivity(),
-                    //взято из item.xml
-                    R.layout.item, userCursor, headers, new int[]{R.id.para},0);
+            userAdapter = new SimpleCursorAdapter(getActivity(), R.layout.item, userCursor, headers, new int[]{R.id.para},0);
             mList.setAdapter(userAdapter);
 
         }

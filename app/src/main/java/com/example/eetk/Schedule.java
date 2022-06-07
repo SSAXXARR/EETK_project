@@ -33,7 +33,7 @@ public class Schedule extends AppCompatActivity {
         setContentView(R.layout.maket1);
 
         Bundle bundle = getIntent().getExtras();
-        classID = bundle.getString("classID");
+        classID = bundle.getString("prepodID");
 
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
