@@ -6,15 +6,72 @@ import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.ListFragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
+import android.widget.Toast;
 
-public class fragment2 extends Fragment {
-    String prepodID;
+public class fragment2 extends ListFragment {
+    String classID,tabID;
+    ListAdapter adapter;
+
+    public fragment2() {
+        // Required empty public constructor
+    }
+
+
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+
+
+        Bundle bundle = getActivity().getIntent().getExtras();
+        classID = bundle.getString("classID");
+
+
+        switch (classID){
+
+            case "1":
+                adapter = new ArrayAdapter<>(getActivity(),
+                        android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.aminova_vt));
+                setListAdapter(adapter);
+                break;
+            case "2":
+                adapter = new ArrayAdapter<>(getActivity(),
+                        android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.saitova_vt));
+                setListAdapter(adapter);
+                break;
+            case "3":
+                adapter = new ArrayAdapter<>(getActivity(),
+                        android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.popkova_vt));
+                setListAdapter(adapter);
+                break;
+
+            case "4":
+                adapter = new ArrayAdapter<>(getActivity(),
+                        android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.serkova_vt));
+                setListAdapter(adapter);
+                break;
+            case "5":
+                adapter = new ArrayAdapter<>(getActivity(),
+                        android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.koreganova_vt));
+                setListAdapter(adapter);
+                break;
+            default:
+                break;
+        }
+
+
+
+    }
+
+    /*String prepodID;
     SimpleCursorAdapter userAdapter;
     DatabaseHelper sqlHelper;
     Cursor userCursor;
@@ -52,5 +109,5 @@ public class fragment2 extends Fragment {
 
         }
         catch (SQLException ex){}
-    }
+    }*/
 }

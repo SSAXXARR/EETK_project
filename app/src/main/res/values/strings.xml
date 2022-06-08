@@ -28,6 +28,238 @@
         <item>Серкова Е.Г</item>
         <item>Кореганова М.А</item>
     </string-array>
+    <string-array name="aminova_pn">
+        <item>328-ИС(2)     305каб</item>
+        <item>328-ИС(2,1)   101каб</item>
+        <item>328-ИС(2,1)   101каб</item>
+        <item>328-ИС(1)     305каб</item>
+        <item>238-ИС(2)   201каб</item>
+    </string-array>
+
+    <string-array name="aminova_vt">
+        <item>418-ИС(2)     305каб</item>
+        <item>418-ИС(2)     401каб</item>
+        <item>328-ИС(2,1)   101каб</item>
+        <item>238-ИС(2,1)   305каб</item>
+        <item>238-ИС(1)     201каб</item>
+    </string-array>
+
+    <string-array name="aminova_sr">
+        <item>328-ИС(2,1)   305каб</item>
+        <item>328-ИС(2,1)   401каб</item>
+        <item>-</item>
+        <item>328-ИС(1)     401каб</item>
+        <item>-</item>
+    </string-array>
+
+    <string-array name="aminova_ch">
+        <item>238-ИС(2)     305каб</item>
+        <item>418-ИС(2)     401каб</item>
+        <item>328-ИС(1)     101каб</item>
+        <item>238-ИС(1)     305каб</item>
+        <item>238-ИС(2,1)   201каб</item>
+    </string-array>
+
+    <string-array name="aminova_pt">
+        <item>418-ИС(2)     305каб</item>
+        <item>418-ИС(2)     401каб</item>
+        <item>328-ИС(2,1)   101каб</item>
+        <item>238-ИС(2,1)   305каб</item>
+        <item>238-ИС(2,1)   201каб</item>
+    </string-array>
+    <string-array name="aminova_sb">
+        <item>-</item>
+        <item>-</item>
+        <item>328-ИС(2,1)   дистант</item>
+        <item>238-ИС(2,1)   дистант</item>
+    </string-array>
+
+    <string-array name="saitova_pn">
+        <item>418-ИС(2)     201каб</item>
+        <item>418-ИС(2)     201каб</item>
+        <item>328-ИС(2,1)   201каб</item>
+        <item>238-ИС(2,1)   201каб</item>
+        <item>238-ИС(2,1)   201каб</item>
+    </string-array>
+
+    <string-array name="saitova_vt">
+        <item>-</item>
+        <item>-</item>
+        <item>328-ИС(2,1)   201каб</item>
+        <item>238-ИС(2,1)   201каб</item>
+        <item>238-ИС(2,1)   201каб</item>
+    </string-array>
+
+    <string-array name="saitova_sr">
+        <item>-</item>
+        <item>-</item>
+        <item>-</item>
+        <item>238-ИС(2,1)   201каб</item>
+        <item>238-ИС(2,1)   201каб</item>
+    </string-array>
+
+    <string-array name="saitova_ch">
+        <item>418-ИС(2)     201каб</item>
+        <item>-</item>
+        <item>-</item>
+        <item>-</item>
+        <item>-</item>
+    </string-array>
+
+    <string-array name="saitova_pt">
+        <item>418-ИС(1)     201каб</item>
+        <item>418-ИС(1)     201каб</item>
+        <item>328-ИС(1)     201каб</item>
+        <item>238-ИС(1)     201каб</item>
+        <item>238-ИС(2)     201каб</item>
+    </string-array>
+    <string-array name="saitova_sb">
+        <item>418-ИС(2)     дистант</item>
+        <item>418-ИС(2)     дистант</item>
+        <item>328-ИС(2,1)   дистант</item>
+        <item>238-ИС(2,1)   дистант</item>
+    </string-array>
+
+    <string-array name="popkova_pn">
+        <item>323-ИС(1,2)     204каб</item>
+        <item>323-ИС(1,2)     204каб</item>
+        <item>328-ИС(1)       204каб</item>
+        <item>238-ИС(1)       204каб</item>
+        <item>238-ИС(2)       204каб</item>
+    </string-array>
+
+    <string-array name="popkova_vt">
+        <item>-</item>
+        <item>-</item>
+        <item>328-ИС(1)       204каб</item>
+        <item>238-ИС(1)       204каб</item>
+        <item>-</item>
+    </string-array>
+
+    <string-array name="popkova_sr">
+        <item>143-ИС(1,2)     204каб</item>
+        <item>148-ИС(1,2)     204каб</item>
+        <item>328-ИС(1)       204каб</item>
+        <item>-</item>
+        <item>238-ИС(2)       204каб</item>
+    </string-array>
+
+    <string-array name="popkova_ch">
+        <item>323-ИС(1,2)     204каб</item>
+        <item>323-ИС(1,2)     204каб</item>
+        <item>328-ИС(1)       204каб</item>
+        <item>238-ИС(1)       204каб</item>
+        <item>238-ИС(2)       204каб</item>
+    </string-array>
+
+    <string-array name="popkova_pt">
+        <item>-</item>
+        <item>-</item>
+        <item>-</item>
+        <item>-</item>
+        <item>238-ИС(1,2)       204каб</item>
+    </string-array>
+    <string-array name="popkova_sb">
+        <item>323-ИС(1,2)     дистант</item>
+        <item>323-ИС(1,2)     дистант</item>
+        <item>328-ИС(1)       дистант</item>
+        <item>238-ИС(1)       дистант</item>
+    </string-array>
+
+
+    <string-array name="serkova_pn">
+        <item>323-ИС(1,2)     304каб</item>
+        <item>323-ИС(1,2)     304каб</item>
+        <item>328-ИС(1)       304каб</item>
+        <item>238-ИС(1)       304каб</item>
+        <item>238-ИС(2)       304каб</item>
+    </string-array>
+
+    <string-array name="serkova_vt">
+        <item>323-ИС(1,2)     304каб</item>
+        <item>323-ИС(1,2)     304каб</item>
+        <item>-</item>
+        <item>-</item>
+        <item>238-ИС(2)       304каб</item>
+    </string-array>
+
+    <string-array name="serkova_sr">
+        <item>-</item>
+        <item>418-ИС(1,2)     304каб</item>
+        <item>328-ИС(1)       304каб</item>
+        <item>238-ИС(1)       304каб</item>
+        <item>-</item>
+    </string-array>
+
+    <string-array name="serkova_ch">
+        <item>418-ИС(1,2)     304каб</item>
+        <item>418-ИС(1,2)     304каб</item>
+        <item>328-ИС(1)       304каб</item>
+        <item>238-ИС(1)       304каб</item>
+        <item>238-ИС(2)       304каб</item>
+    </string-array>
+
+    <string-array name="serkova_pt">
+        <item>-</item>
+        <item>-</item>
+        <item>328-ИС(1)       304каб</item>
+        <item>238-ИС(1)       304каб</item>
+        <item>-</item>
+    </string-array>
+    <string-array name="serkova_sb">
+        <item>323-ИС(1,2)     дистант</item>
+        <item>323-ИС(1,2)     дистант</item>
+        <item>418-ИС(1)       дистант</item>
+        <item>418-ИС(1)       дистант</item>
+
+    </string-array>
+    <string-array name="koreganova_pn">
+        <item>418-ИС     208каб</item>
+        <item>418-ИС     зал</item>
+        <item>328-ИС     зал</item>
+        <item>238-ИС      зал</item>
+        <item>238-ИС      зал</item>
+    </string-array>
+
+    <string-array name="koreganova_vt">
+        <item>328-ИС     208каб</item>
+        <item>148-ИС     зал</item>
+        <item>143-ИС     зал</item>
+        <item>418-ИС      зал</item>
+        <item>238-ИС      зал</item>
+    </string-array>
+
+    <string-array name="koreganova_sr">
+        <item>328-ИС     зал</item>
+        <item>-</item>
+        <item>-</item>
+        <item>418-ИС      208каб</item>
+        <item>238-ИС      208каб</item>
+    </string-array>
+
+    <string-array name="koreganova_ch">
+        <item>328-ИС     208каб</item>
+        <item>-</item>
+        <item>143-ИС     208каб</item>
+        <item>418-ИС      208каб</item>
+        <item>-</item>
+    </string-array>
+
+    <string-array name="koreganova_pt">
+        <item>-</item>
+        <item>-</item>
+        <item>-</item>
+        <item></item>
+        <item>-</item>
+    </string-array>
+    <string-array name="koreganova_sb">
+        <item>328-ИС     дистант</item>
+        <item>148-ИС     дистант</item>
+        <item>143-ИС     дистант</item>
+        <item>418-ИС      дистант</item>
+        <item>238-ИС      дистант</item>
+    </string-array>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

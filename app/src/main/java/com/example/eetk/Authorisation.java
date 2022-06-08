@@ -28,7 +28,7 @@ public class Authorisation extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.autoruzation);
         findViewById(R.id.enter).setOnClickListener(this);
-        findViewById(R.id.bntReg).setOnClickListener(this);
+        //findViewById(R.id.bntReg).setOnClickListener(this);
         login = (EditText) findViewById(R.id.editTextLogin);
         password = (EditText) findViewById(R.id.editTextPassword);
         mAuth = FirebaseAuth.getInstance();
@@ -46,7 +46,7 @@ public class Authorisation extends AppCompatActivity implements View.OnClickList
                 singIn(login.getText().toString(), password.getText().toString());
             }
         }
-        // если нажата кнопка зарегистрироваться
+        /*// если нажата кнопка зарегистрироваться
         else if(view.getId() == R.id.bntReg){
             //если одно из полей не заполнено
             if(password.getText().toString().equals("") && login.getText().toString().equals("")) {
@@ -54,7 +54,7 @@ public class Authorisation extends AppCompatActivity implements View.OnClickList
             }else{
                 registration(login.getText().toString(), password.getText().toString());
             }
-        }
+        }*/
     }
 
     // метод авторизации

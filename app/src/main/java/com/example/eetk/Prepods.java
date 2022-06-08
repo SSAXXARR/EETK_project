@@ -42,14 +42,14 @@ public class Prepods extends AppCompatActivity {
                 switch (i){
                     case 0:
                         intent.setClass(Prepods.this, Schedule.class);
-                        b.putString("prepodID","1");
+                        b.putString("classID","1");
                         intent.putExtras(b);
                         startActivity(intent);
                         break;
 
                     case 1:
                         intent.setClass(Prepods.this, Schedule.class);
-                        b.putString("prepodID","2");
+                        b.putString("classID","2");
                         intent.putExtras(b);
                         startActivity(intent);
                         Toast.makeText(getBaseContext(),"Саитова А.А", Toast.LENGTH_SHORT).show();
@@ -57,7 +57,7 @@ public class Prepods extends AppCompatActivity {
 
                     case 2:
                         intent.setClass(Prepods.this, Schedule.class);
-                        b.putString("prepodID","3");
+                        b.putString("classID","3");
                         intent.putExtras(b);
                         startActivity(intent);
                         Toast.makeText(getBaseContext(),"Попкова К.А", Toast.LENGTH_SHORT).show();
@@ -65,7 +65,7 @@ public class Prepods extends AppCompatActivity {
 
                     case 3:
                         intent.setClass(Prepods.this, Schedule.class);
-                        b.putString("prepodID","4");
+                        b.putString("classID","4");
                         intent.putExtras(b);
                         startActivity(intent);
                         Toast.makeText(getBaseContext(),"Серкова Е.Г", Toast.LENGTH_SHORT).show();
@@ -73,12 +73,11 @@ public class Prepods extends AppCompatActivity {
 
                     case 4:
                         intent.setClass(Prepods.this, Schedule.class);
-                        b.putString("prepodID","5");
+                        b.putString("classID","5");
                         intent.putExtras(b);
                         startActivity(intent);
                         Toast.makeText(getBaseContext(),"Кореганова М.А", Toast.LENGTH_SHORT).show();
                         break;
-
                 }
             }
         });
