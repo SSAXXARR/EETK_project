@@ -5,9 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.SpannableString;
+import android.text.style.UnderlineSpan;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -16,8 +19,39 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class Authorisation extends AppCompatActivity implements View.OnClickListener{
-    public static final String PASSWORD_KEY = "PASSWORD_KEY";
+public class Authorisation extends AppCompatActivity {
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.autoruzation);
+        TextView tv = (TextView) findViewById(R.id.zareg);
+        SpannableString content = new SpannableString("Зарегистрироваться");
+        content.setSpan(new UnderlineSpan(), 0, content.length(), 0);
+        tv.setText(content);
+        TextView tv1 = (TextView) findViewById(R.id.skip);
+        SpannableString content2 = new SpannableString("Зарегистрироваться");
+        content.setSpan(new UnderlineSpan(), 0, content.length(), 0);
+        tv.setText(content);
+    }
+    public void clikZareg(View v)
+    {
+        Intent i = new Intent(Authorisation.this, CreateAcc.class);
+        startActivity(i);
+        finish();
+    }
+    public void skip(View v)
+    {
+        Intent i = new Intent(Authorisation.this, Menu_pilgrim.class);
+        startActivity(i);
+        finish();
+    }
+
+
+
+
+    /*public static final String PASSWORD_KEY = "PASSWORD_KEY";
     public static final String LOGIN_KEY = "LOGIN_KEY";
     Button enter, register;
     EditText login, password;
@@ -46,7 +80,7 @@ public class Authorisation extends AppCompatActivity implements View.OnClickList
                 singIn(login.getText().toString(), password.getText().toString());
             }
         }
-        /*// если нажата кнопка зарегистрироваться
+        // если нажата кнопка зарегистрироваться
         else if(view.getId() == R.id.bntReg){
             //если одно из полей не заполнено
             if(password.getText().toString().equals("") && login.getText().toString().equals("")) {
@@ -54,7 +88,7 @@ public class Authorisation extends AppCompatActivity implements View.OnClickList
             }else{
                 registration(login.getText().toString(), password.getText().toString());
             }
-        }*/
+        }
     }
 
     // метод авторизации
@@ -98,5 +132,5 @@ public class Authorisation extends AppCompatActivity implements View.OnClickList
         }else{
             Toast.makeText(this, "одно из полей не заполнено", Toast.LENGTH_SHORT).show();
         }
-    }
+    }*/
 }

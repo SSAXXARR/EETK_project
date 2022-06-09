@@ -8,12 +8,12 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="66dp"
         android:fontFamily="@font/solid"
-        android:text="Ксения Попкова"
+        android:text="Неизвестный пользователь"
         android:textSize="30dp"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:fontFamily="@font/solid"
-        android:text="Роль - преподаватель"
+        android:text="Роль - пилигрим"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -35,7 +35,7 @@
         android:layout_height="122dp"
         android:layout_marginTop="56dp"
         android:layout_marginRight="16dp"
-        android:src="@drawable/woman"
+        android:src="@drawable/boy"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -45,7 +45,7 @@
         android:layout_height="140dp"
         android:layout_weight="4"
         android:scaleType="fitCenter"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="100dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="220dp"
         android:src="@drawable/fireguy"
@@ -61,12 +61,11 @@
         android:id="@+id/myrasp1"
         android:layout_width="match_parent"
         android:layout_height="140dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="100dp"
         android:layout_marginLeft="150dp"
         android:layout_marginRight="30dp"
-
         android:background="@drawable/mybutton2registration"
-        android:text="Мое расписание"
+        android:text="Расписание преподавателей"
         android:textColor="@color/white"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -83,29 +82,30 @@
         android:layout_weight="4"
         android:background="@drawable/mybutton"
         android:scaleType="fitCenter"
-        android:src="@drawable/eye"
+        android:src="@drawable/portal"
         android:text="Мое расписание"
-        android:textColor="@color/white"
-        android:textSize="25dp"
-        android:layout_marginTop="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/myrasp" />
-
-    <Button
-        android:id="@+id/rasp_col"
-        android:layout_width="match_parent"
-        android:layout_height="140dp"
-        android:layout_marginLeft="150dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginBottom="60dp"
-        android:background="@drawable/mybutton"
-        android:text="Расписание коллег"
         android:textColor="@color/white"
         android:textSize="20dp"
         android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/myrasp" />
+
+    <Button
+        android:id="@+id/autoriz"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/mybutton"
+        android:text="Авторизоваться"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myrasp"
+        tools:ignore="OnClick" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

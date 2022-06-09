@@ -37,23 +37,23 @@ public class fragment1 extends ListFragment {
         switch (classID){
             case "1":
                 adapter = new ArrayAdapter<>(getActivity(),
-                        android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.aminova_pn));
+                        R.layout.mytextview2, getResources().getStringArray(R.array.aminova_pn));
                 setListAdapter(adapter);
                 break;
             case "2":
                 adapter = new ArrayAdapter<>(getActivity(),
-                        android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.saitova_pn));
+                        R.layout.mytextview, getResources().getStringArray(R.array.saitova_pn));
                 setListAdapter(adapter);
                 break;
             case "3":
                 adapter = new ArrayAdapter<>(getActivity(),
-                        android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.popkova_pn));
+                        R.layout.mytextview, getResources().getStringArray(R.array.popkova_pn));
                 setListAdapter(adapter);
                 break;
 
             case "4":
                 adapter = new ArrayAdapter<>(getActivity(),
-                        android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.serkova_pn));
+                        R.layout.mytextview, getResources().getStringArray(R.array.serkova_pn));
                 setListAdapter(adapter);
                 break;
             case "5":

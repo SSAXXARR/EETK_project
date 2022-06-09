@@ -10,10 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light">
         <activity
+            android:name=".Menu_pilgrim"
+            android:exported="false" />
+        <activity
+            android:name=".CreateAcc"
+            android:exported="false" />
+        <activity
             android:name=".SplashScreen"
             android:exported="false" />
         <activity
-            android:name=".Menu"
+            android:name=".Authorisation"
             android:exported="true"
             android:hardwareAccelerated="false"
             android:label="ЕЕТК"
@@ -34,8 +40,8 @@
             android:name=".Prepods"
             android:exported="false" />
         <activity
-            android:name=".Authorisation"
-            android:exported="false"></activity>
+            android:name=".Menu"
+            android:exported="false" />
     </application>
 
 </manifest>

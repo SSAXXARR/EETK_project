@@ -98,8 +98,10 @@
             app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
 
         <TextView
+            android:id="@+id/zareg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="clikZareg"
             android:text="Зарегистрироваться" />
     </LinearLayout>
 
@@ -120,11 +122,13 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
 
     <TextView
+        android:id="@+id/skip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="skip"
         android:layout_marginTop="25dp"
         android:textSize="15dp"
+        android:onClick="skip"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/enter" />

@@ -29,7 +29,7 @@ public class Prepods extends AppCompatActivity {
 
         String[] prepods_names = getResources().getStringArray(R.array.prepods_names);
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
-                android.R.layout.simple_list_item_1, prepods_names);
+                R.layout.mytextview, prepods_names);
 
         listView.setAdapter(adapter);
 
