@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidCourse/EETK_project/app/src/main/res/drawable/circle.xml" value="0.171" />
         <entry key="..\:/AndroidCourse/EETK_project/app/src/main/res/drawable/font.xml" value="0.171" />
         <entry key="..\:/AndroidCourse/EETK_project/app/src/main/res/drawable/mybutton.xml" value="0.171" />
         <entry key="..\:/AndroidCourse/EETK_project/app/src/main/res/drawable/mybutton2registration.xml" value="0.171" />
@@ -11,6 +12,7 @@
         <entry key="..\:/AndroidCourse/EETK_project/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/AndroidCourse/EETK_project/app/src/main/res/layout/admin_menu.xml" value="0.20863616930312098" />
         <entry key="..\:/AndroidCourse/EETK_project/app/src/main/res/layout/autoruzation.xml" value="0.264" />
+        <entry key="..\:/AndroidCourse/EETK_project/app/src/main/res/layout/create_acc.xml" value="0.264" />
         <entry key="..\:/AndroidCourse/EETK_project/app/src/main/res/layout/fragment11.xml" value="0.20863616930312098" />
         <entry key="..\:/AndroidCourse/EETK_project/app/src/main/res/layout/fragment_fragment1.xml" value="0.19709277469003847" />
         <entry key="..\:/AndroidCourse/EETK_project/app/src/main/res/layout/fragment_fragment2.xml" value="0.19709277469003847" />
@@ -20,6 +22,7 @@
         <entry key="..\:/AndroidCourse/EETK_project/app/src/main/res/layout/fragment_thursday.xml" value="0.20863616930312098" />
         <entry key="..\:/AndroidCourse/EETK_project/app/src/main/res/layout/item.xml" value="0.20778110303548525" />
         <entry key="..\:/AndroidCourse/EETK_project/app/src/main/res/layout/maket1.xml" value="0.1" />
+        <entry key="..\:/AndroidCourse/EETK_project/app/src/main/res/layout/menu.xml" value="0.20863616930312098" />
         <entry key="..\:/AndroidCourse/EETK_project/app/src/main/res/layout/prepods.xml" value="0.20863616930312098" />
         <entry key="..\:/AndroidCourse/EETK_project/app/src/main/res/layout/splash_screen.xml" value="0.4073455759599332" />
         <entry key="..\:/AndroidProjects/EETK/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
