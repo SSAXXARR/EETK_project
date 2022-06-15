@@ -42,11 +42,10 @@ public class Schedule extends AppCompatActivity implements SwipeRefreshLayout.On
         Bundle bundle = getIntent().getExtras();
         classID = bundle.getString("classID");
 
-        // Create the adapter that will return a fragment for each of the three
-        // primary sections of the activity.
+        // адаптер, который отражает все 6 наших дней недели
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
 
-        // Set up the ViewPager with the sections adapter.
+        // Устанавливаем viewPager в наш адаптер.
         mViewPager = (ViewPager) findViewById(R.id.viewPager);
         mViewPager.setAdapter(mSectionsPagerAdapter);
 

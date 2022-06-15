@@ -17,7 +17,6 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Prepods extends AppCompatActivity {
 
     static final String EXTRA_STATION_RESULT = "EXTRA STATION RESULT";
-    String[] prepodsList; //создаем массив строк метро
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +32,7 @@ public class Prepods extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-        //обработчик клика, на любую из станций метро
+        //обработчик клика
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {

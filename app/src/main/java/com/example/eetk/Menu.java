@@ -1,5 +1,6 @@
 package com.example.eetk;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
@@ -8,6 +9,7 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.ScaleDrawable;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -42,7 +44,6 @@ public class Menu extends AppCompatActivity {
             public void onClick(View view) {
                 intent.setClass(Menu.this, Schedule.class);
                 if(txtName.equalsIgnoreCase("Анастасия Сергеевна Аминова")){
-                    boolean aaa = txtName.equalsIgnoreCase("Анастасия Сергеевна Аминова");
                     b.putString("classID","1");
                     intent.putExtras(b);
                     intent.putExtra("name", txtName);
@@ -121,5 +122,20 @@ public class Menu extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(android.view.Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        Intent intent = new Intent(Menu.this, Authorisation.class);
+        startActivity(intent);
+        finish();
+        return true;
     }
 }

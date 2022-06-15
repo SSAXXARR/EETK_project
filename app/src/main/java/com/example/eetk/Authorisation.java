@@ -1,9 +1,10 @@
 package com.example.eetk;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.style.UnderlineSpan;
@@ -13,21 +14,19 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-
 public class Authorisation extends AppCompatActivity {
     Button enter;
     EditText login, password;
     DBHelper DB;
+    SharedPreferences mSettings;
+    static SharedPreferences.Editor editor;
+    String NAME;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.autoruzation);
+
         TextView tv = (TextView) findViewById(R.id.zareg);
         SpannableString content = new SpannableString("Зарегистрироваться");
         content.setSpan(new UnderlineSpan(), 0, content.length(), 0);
@@ -53,7 +52,7 @@ public class Authorisation extends AppCompatActivity {
                         intent.putExtra("name", user);
                         startActivity(intent);
                     }else{
-                        Toast.makeText(Authorisation.this, "Ошибка", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Authorisation.this, "Данные неверны", Toast.LENGTH_SHORT).show();
                     }
                 }
             }
@@ -76,6 +75,7 @@ public class Authorisation extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
     }
+
     /*public static final String PASSWORD_KEY = "PASSWORD_KEY";
     public static final String LOGIN_KEY = "LOGIN_KEY";
     Button enter, register;

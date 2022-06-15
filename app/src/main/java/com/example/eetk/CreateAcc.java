@@ -52,7 +52,7 @@ public class CreateAcc extends AppCompatActivity {
                     }
                 }
                 else{
-                    Toast.makeText(this, "Пользователь не найден, проверьте написание или зарегистрируйтесь",
+                    Toast.makeText(this, "Пользователь существует или вы ошиблись, проверьте написание или зарегистрируйтесь",
                             Toast.LENGTH_SHORT).show();
                 }
             }else{
