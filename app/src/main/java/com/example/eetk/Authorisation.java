@@ -20,7 +20,9 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class Authorisation extends AppCompatActivity {
-
+    Button enter;
+    EditText login, password;
+    DBHelper DB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,10 +32,32 @@ public class Authorisation extends AppCompatActivity {
         SpannableString content = new SpannableString("Зарегистрироваться");
         content.setSpan(new UnderlineSpan(), 0, content.length(), 0);
         tv.setText(content);
-        TextView tv1 = (TextView) findViewById(R.id.skip);
-        SpannableString content2 = new SpannableString("Зарегистрироваться");
-        content.setSpan(new UnderlineSpan(), 0, content.length(), 0);
-        tv.setText(content);
+
+        login = (EditText) findViewById(R.id.editTextLogin);
+        password = (EditText) findViewById(R.id.editTextPassword);
+        enter = findViewById(R.id.enter);
+        DB = new DBHelper(this);
+
+        enter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String user = login.getText().toString();
+                String pass = password.getText().toString();
+
+                if(user.equals("")||pass.equals(""))
+                    Toast.makeText(Authorisation.this, "Одно из полей не заполнено", Toast.LENGTH_SHORT).show();
+                else{
+                    Boolean checkuserpass = DB.checkusernamepassword(user, pass);
+                    if(checkuserpass == true){
+                        Intent intent  = new Intent(getApplicationContext(), Menu.class);
+                        intent.putExtra("name", user);
+                        startActivity(intent);
+                    }else{
+                        Toast.makeText(Authorisation.this, "Ошибка", Toast.LENGTH_SHORT).show();
+                    }
+                }
+            }
+        });
     }
     public void clikZareg(View v)
     {
@@ -48,9 +72,10 @@ public class Authorisation extends AppCompatActivity {
         finish();
     }
 
-
-
-
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
     /*public static final String PASSWORD_KEY = "PASSWORD_KEY";
     public static final String LOGIN_KEY = "LOGIN_KEY";
     Button enter, register;

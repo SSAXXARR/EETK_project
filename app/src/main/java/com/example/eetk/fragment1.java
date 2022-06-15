@@ -37,7 +37,7 @@ public class fragment1 extends ListFragment {
         switch (classID){
             case "1":
                 adapter = new ArrayAdapter<>(getActivity(),
-                        R.layout.mytextview2, getResources().getStringArray(R.array.aminova_pn));
+                        R.layout.mytextview, getResources().getStringArray(R.array.aminova_pn));
                 setListAdapter(adapter);
                 break;
             case "2":
@@ -58,7 +58,7 @@ public class fragment1 extends ListFragment {
                 break;
             case "5":
                 adapter = new ArrayAdapter<>(getActivity(),
-                        android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.koreganova_pn));
+                        R.layout.mytextview, getResources().getStringArray(R.array.koreganova_pn));
                 setListAdapter(adapter);
                 break;
             default:

@@ -40,28 +40,28 @@ public class fragmentFriday extends ListFragment {
 
             case "1":
                 adapter = new ArrayAdapter<>(getActivity(),
-                        android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.aminova_sr));
+                        R.layout.mytextview, getResources().getStringArray(R.array.aminova_sr));
                 setListAdapter(adapter);
                 break;
             case "2":
                 adapter = new ArrayAdapter<>(getActivity(),
-                        android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.saitova_sr));
+                        R.layout.mytextview, getResources().getStringArray(R.array.saitova_sr));
                 setListAdapter(adapter);
                 break;
             case "3":
                 adapter = new ArrayAdapter<>(getActivity(),
-                        android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.popkova_sr));
+                        R.layout.mytextview, getResources().getStringArray(R.array.popkova_sr));
                 setListAdapter(adapter);
                 break;
 
             case "4":
                 adapter = new ArrayAdapter<>(getActivity(),
-                        android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.serkova_sr));
+                        R.layout.mytextview, getResources().getStringArray(R.array.serkova_sr));
                 setListAdapter(adapter);
                 break;
             case "5":
                 adapter = new ArrayAdapter<>(getActivity(),
-                        android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.koreganova_sr));
+                        R.layout.mytextview, getResources().getStringArray(R.array.koreganova_sr));
                 setListAdapter(adapter);
                 break;
             default:

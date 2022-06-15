@@ -37,7 +37,6 @@ public class Schedule extends AppCompatActivity implements SwipeRefreshLayout.On
         //штучка загрузки.
         mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.refresh);
         mSwipeRefreshLayout.setOnRefreshListener(this);
-        // делаем повеселее
         mSwipeRefreshLayout.setColorScheme(R.color.red,R.color.blue, R.color.green);
 
         Bundle bundle = getIntent().getExtras();

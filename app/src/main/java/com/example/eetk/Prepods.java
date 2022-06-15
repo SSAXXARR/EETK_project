@@ -29,7 +29,7 @@ public class Prepods extends AppCompatActivity {
 
         String[] prepods_names = getResources().getStringArray(R.array.prepods_names);
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
-                R.layout.mytextview, prepods_names);
+                R.layout.mytextview2,R.id.text_view_cat_name, prepods_names);
 
         listView.setAdapter(adapter);
 
@@ -52,7 +52,6 @@ public class Prepods extends AppCompatActivity {
                         b.putString("classID","2");
                         intent.putExtras(b);
                         startActivity(intent);
-                        Toast.makeText(getBaseContext(),"Саитова А.А", Toast.LENGTH_SHORT).show();
                         break;
 
                     case 2:
@@ -60,7 +59,6 @@ public class Prepods extends AppCompatActivity {
                         b.putString("classID","3");
                         intent.putExtras(b);
                         startActivity(intent);
-                        Toast.makeText(getBaseContext(),"Попкова К.А", Toast.LENGTH_SHORT).show();
                         break;
 
                     case 3:
@@ -68,7 +66,6 @@ public class Prepods extends AppCompatActivity {
                         b.putString("classID","4");
                         intent.putExtras(b);
                         startActivity(intent);
-                        Toast.makeText(getBaseContext(),"Серкова Е.Г", Toast.LENGTH_SHORT).show();
                         break;
 
                     case 4:
@@ -76,7 +73,6 @@ public class Prepods extends AppCompatActivity {
                         b.putString("classID","5");
                         intent.putExtras(b);
                         startActivity(intent);
-                        Toast.makeText(getBaseContext(),"Кореганова М.А", Toast.LENGTH_SHORT).show();
                         break;
                 }
             }

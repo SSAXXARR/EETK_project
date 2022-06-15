@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Menu">
@@ -44,11 +47,12 @@
         android:layout_width="match_parent"
         android:layout_height="140dp"
         android:layout_weight="4"
+        android:padding="20dp"
         android:scaleType="fitCenter"
         android:layout_marginTop="100dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="220dp"
-        android:src="@drawable/fireguy"
+        android:src="@drawable/calendar123"
         android:background="@drawable/mybutton2registration"
         android:text="Мое расписание"
         android:textColor="@color/white"
@@ -80,9 +84,10 @@
         android:layout_marginLeft="30dp"
         android:layout_marginRight="220dp"
         android:layout_weight="4"
+        android:padding="20dp"
         android:background="@drawable/mybutton"
         android:scaleType="fitCenter"
-        android:src="@drawable/portal"
+        android:src="@drawable/butterfly123"
         android:text="Мое расписание"
         android:textColor="@color/white"
         android:textSize="20dp"
@@ -108,4 +113,13 @@
         app:layout_constraintTop_toBottomOf="@+id/myrasp"
         tools:ignore="OnClick" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/autoriz" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
